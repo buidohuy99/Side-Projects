@@ -1,0 +1,10 @@
+
+int a[]={---input your array---};
+int numOfCol =..., numOfRows=...;
+   for(int i = 0;i<numOfCol*numOfRows;i++){
+        if(i%numOfCol==0){
+            if(i!=0) std::cout<<std::endl;
+            std::cout<<"< ";
+        }
+        std::cout<<a[i]<<" ";
+    }

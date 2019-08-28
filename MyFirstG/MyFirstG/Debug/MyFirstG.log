@@ -1,0 +1,109 @@
+﻿Build started 8/25/2019 12:01:04 PM.
+     1>Project "D:\VSProjects\LearningOutside\MyFirstG\MyFirstG\MyFirstG.vcxproj" on node 2 (Rebuild target(s)).
+     1>ClCompile:
+         D:\VS2012\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt Animator.cpp Application.cpp Camera2D.cpp GameObject.cpp gameState.cpp InputControl.cpp main.cpp mainGame.cpp ObjBBox.cpp Physics.cpp Graphics.cpp Player.cpp QuadTree.cpp ResourceManager.cpp SceneManager.cpp Shader.cpp Sprite.cpp SpriteBatch.cpp stb_image.cpp Texture2D.cpp TileMap.cpp Window.cpp
+         Window.cpp
+         TileMap.cpp
+     1>d:\vsprojects\learningoutside\myfirstg\myfirstg\tilemap.h(49): warning C4244: '=' : conversion from 'float' to 'unsigned int', possible loss of data
+     1>d:\vsprojects\learningoutside\myfirstg\myfirstg\tilemap.h(50): warning C4244: '=' : conversion from 'float' to 'unsigned int', possible loss of data
+     1>d:\vsprojects\learningoutside\myfirstg\myfirstg\tilemap.h(52): warning C4244: '=' : conversion from 'unsigned int' to 'float', possible loss of data
+     1>d:\vsprojects\learningoutside\myfirstg\myfirstg\tilemap.h(54): warning C4244: '=' : conversion from 'unsigned int' to 'float', possible loss of data
+     1>d:\vsprojects\learningoutside\myfirstg\myfirstg\tilemap.cpp(44): warning C4244: 'initializing' : conversion from 'float' to 'unsigned int', possible loss of data
+     1>d:\vsprojects\learningoutside\myfirstg\myfirstg\tilemap.cpp(45): warning C4244: 'initializing' : conversion from 'float' to 'unsigned int', possible loss of data
+     1>d:\vsprojects\learningoutside\myfirstg\myfirstg\tilemap.cpp(46): warning C4244: 'initializing' : conversion from 'float' to 'unsigned int', possible loss of data
+     1>d:\vsprojects\learningoutside\myfirstg\myfirstg\tilemap.cpp(47): warning C4244: 'initializing' : conversion from 'float' to 'unsigned int', possible loss of data
+     1>d:\vsprojects\learningoutside\myfirstg\myfirstg\tilemap.cpp(51): warning C4244: 'argument' : conversion from 'unsigned int' to 'float', possible loss of data
+     1>d:\vsprojects\learningoutside\myfirstg\myfirstg\tilemap.cpp(53): warning C4244: '=' : conversion from 'unsigned int' to 'float', possible loss of data
+     1>d:\vsprojects\learningoutside\myfirstg\myfirstg\tilemap.cpp(56): warning C4244: '=' : conversion from 'unsigned int' to 'float', possible loss of data
+     1>d:\vsprojects\learningoutside\myfirstg\myfirstg\tilemap.cpp(71): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+     1>d:\vsprojects\learningoutside\myfirstg\myfirstg\tilemap.cpp(172): warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+     1>d:\vsprojects\learningoutside\myfirstg\myfirstg\tilemap.cpp(333): warning C4018: '>=' : signed/unsigned mismatch
+     1>d:\vsprojects\learningoutside\myfirstg\myfirstg\tilemap.cpp(334): warning C4018: '>=' : signed/unsigned mismatch
+         Texture2D.cpp
+         stb_image.cpp
+         SpriteBatch.cpp
+         Sprite.cpp
+         Shader.cpp
+         SceneManager.cpp
+     1>d:\vsprojects\learningoutside\myfirstg\myfirstg\tilemap.h(49): warning C4244: '=' : conversion from 'float' to 'unsigned int', possible loss of data
+     1>d:\vsprojects\learningoutside\myfirstg\myfirstg\tilemap.h(50): warning C4244: '=' : conversion from 'float' to 'unsigned int', possible loss of data
+     1>d:\vsprojects\learningoutside\myfirstg\myfirstg\tilemap.h(52): warning C4244: '=' : conversion from 'unsigned int' to 'float', possible loss of data
+     1>d:\vsprojects\learningoutside\myfirstg\myfirstg\tilemap.h(54): warning C4244: '=' : conversion from 'unsigned int' to 'float', possible loss of data
+         ResourceManager.cpp
+         QuadTree.cpp
+         Player.cpp
+     1>d:\vsprojects\learningoutside\myfirstg\myfirstg\tilemap.h(49): warning C4244: '=' : conversion from 'float' to 'unsigned int', possible loss of data
+     1>d:\vsprojects\learningoutside\myfirstg\myfirstg\tilemap.h(50): warning C4244: '=' : conversion from 'float' to 'unsigned int', possible loss of data
+     1>d:\vsprojects\learningoutside\myfirstg\myfirstg\tilemap.h(52): warning C4244: '=' : conversion from 'unsigned int' to 'float', possible loss of data
+     1>d:\vsprojects\learningoutside\myfirstg\myfirstg\tilemap.h(54): warning C4244: '=' : conversion from 'unsigned int' to 'float', possible loss of data
+         Graphics.cpp
+         Physics.cpp
+     1>d:\vsprojects\learningoutside\myfirstg\myfirstg\tilemap.h(49): warning C4244: '=' : conversion from 'float' to 'unsigned int', possible loss of data
+     1>d:\vsprojects\learningoutside\myfirstg\myfirstg\tilemap.h(50): warning C4244: '=' : conversion from 'float' to 'unsigned int', possible loss of data
+     1>d:\vsprojects\learningoutside\myfirstg\myfirstg\tilemap.h(52): warning C4244: '=' : conversion from 'unsigned int' to 'float', possible loss of data
+     1>d:\vsprojects\learningoutside\myfirstg\myfirstg\tilemap.h(54): warning C4244: '=' : conversion from 'unsigned int' to 'float', possible loss of data
+     1>d:\vsprojects\learningoutside\myfirstg\myfirstg\physics.cpp(163): warning C4244: 'initializing' : conversion from 'float' to 'unsigned int', possible loss of data
+     1>d:\vsprojects\learningoutside\myfirstg\myfirstg\physics.cpp(164): warning C4244: 'initializing' : conversion from 'float' to 'unsigned int', possible loss of data
+     1>d:\vsprojects\learningoutside\myfirstg\myfirstg\physics.cpp(177): warning C4244: 'initializing' : conversion from 'float' to 'unsigned int', possible loss of data
+     1>d:\vsprojects\learningoutside\myfirstg\myfirstg\physics.cpp(190): warning C4244: 'initializing' : conversion from 'float' to 'int', possible loss of data
+     1>d:\vsprojects\learningoutside\myfirstg\myfirstg\physics.cpp(209): warning C4244: 'initializing' : conversion from 'float' to 'int', possible loss of data
+     1>d:\vsprojects\learningoutside\myfirstg\myfirstg\physics.cpp(223): warning C4244: 'initializing' : conversion from 'float' to 'unsigned int', possible loss of data
+     1>d:\vsprojects\learningoutside\myfirstg\myfirstg\physics.cpp(236): warning C4244: 'initializing' : conversion from 'float' to 'int', possible loss of data
+     1>d:\vsprojects\learningoutside\myfirstg\myfirstg\physics.cpp(252): warning C4244: 'initializing' : conversion from 'float' to 'int', possible loss of data
+     1>d:\vsprojects\learningoutside\myfirstg\myfirstg\physics.cpp(277): warning C4244: 'initializing' : conversion from 'float' to 'unsigned int', possible loss of data
+     1>d:\vsprojects\learningoutside\myfirstg\myfirstg\physics.cpp(278): warning C4244: 'initializing' : conversion from 'float' to 'unsigned int', possible loss of data
+     1>d:\vsprojects\learningoutside\myfirstg\myfirstg\physics.cpp(286): warning C4244: 'initializing' : conversion from 'float' to 'unsigned int', possible loss of data
+     1>d:\vsprojects\learningoutside\myfirstg\myfirstg\physics.cpp(288): warning C4244: 'initializing' : conversion from 'float' to 'unsigned int', possible loss of data
+     1>d:\vsprojects\learningoutside\myfirstg\myfirstg\physics.cpp(307): warning C4244: 'initializing' : conversion from 'float' to 'int', possible loss of data
+     1>d:\vsprojects\learningoutside\myfirstg\myfirstg\physics.cpp(325): warning C4244: 'initializing' : conversion from 'float' to 'int', possible loss of data
+     1>d:\vsprojects\learningoutside\myfirstg\myfirstg\physics.cpp(349): warning C4244: 'initializing' : conversion from 'float' to 'int', possible loss of data
+     1>d:\vsprojects\learningoutside\myfirstg\myfirstg\physics.cpp(365): warning C4244: 'initializing' : conversion from 'float' to 'int', possible loss of data
+     1>d:\vsprojects\learningoutside\myfirstg\myfirstg\physics.cpp(400): warning C4244: 'initializing' : conversion from 'float' to 'unsigned int', possible loss of data
+     1>d:\vsprojects\learningoutside\myfirstg\myfirstg\physics.cpp(401): warning C4244: 'initializing' : conversion from 'float' to 'unsigned int', possible loss of data
+     1>d:\vsprojects\learningoutside\myfirstg\myfirstg\physics.cpp(402): warning C4244: 'initializing' : conversion from 'float' to 'unsigned int', possible loss of data
+     1>d:\vsprojects\learningoutside\myfirstg\myfirstg\physics.cpp(403): warning C4244: 'initializing' : conversion from 'float' to 'unsigned int', possible loss of data
+         ObjBBox.cpp
+         mainGame.cpp
+         main.cpp
+         InputControl.cpp
+         gameState.cpp
+         GameObject.cpp
+         Camera2D.cpp
+         Generating Code...
+         Compiling...
+         Application.cpp
+     1>d:\vsprojects\learningoutside\myfirstg\myfirstg\application.cpp(153): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+         Animator.cpp
+         Generating Code...
+         D:\VS2012\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TC /analyze- /errorReport:prompt glad.c
+         glad.c
+       Link:
+         D:\VS2012\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\VSProjects\LearningOutside\MyFirstG\Debug\MyFirstG.exe" /INCREMENTAL /NOLOGO SDL2.lib SDL2main.lib opengl32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\VSProjects\LearningOutside\MyFirstG\Debug\MyFirstG.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\VSProjects\LearningOutside\MyFirstG\Debug\MyFirstG.lib" /MACHINE:X86 Debug\Animator.obj
+         Debug\Application.obj
+         Debug\Camera2D.obj
+         Debug\GameObject.obj
+         Debug\gameState.obj
+         Debug\glad.obj
+         Debug\InputControl.obj
+         Debug\main.obj
+         Debug\mainGame.obj
+         Debug\ObjBBox.obj
+         Debug\Physics.obj
+         Debug\Graphics.obj
+         Debug\Player.obj
+         Debug\QuadTree.obj
+         Debug\ResourceManager.obj
+         Debug\SceneManager.obj
+         Debug\Shader.obj
+         Debug\Sprite.obj
+         Debug\SpriteBatch.obj
+         Debug\stb_image.obj
+         Debug\Texture2D.obj
+         Debug\TileMap.obj
+         Debug\Window.obj
+         MyFirstG.vcxproj -> D:\VSProjects\LearningOutside\MyFirstG\Debug\MyFirstG.exe
+     1>Done Building Project "D:\VSProjects\LearningOutside\MyFirstG\MyFirstG\MyFirstG.vcxproj" (Rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:20.05

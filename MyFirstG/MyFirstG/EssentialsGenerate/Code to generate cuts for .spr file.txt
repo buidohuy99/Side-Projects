@@ -1,0 +1,7 @@
+int tileWidth=...,tileHeight=...;
+int numOfCol=...,numOfRows=...;
+std::cout<<numOfCol*numOfRows<<std::endl;
+for(int i=0;i<numOfCol*numOfRows;i++){
+	std::cout<<(tileWidth+spacing)*(i%numOfCol)<< " "<<(tileHeight+spacing)*(i/numOfCol)<<" "
+	<<tileWidth<<" "<<tileHeight<<std::endl;
+}
