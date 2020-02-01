@@ -7,7 +7,14 @@
 
 bool CompareTexture(InfoQuad* a,InfoQuad* b){
 	if(Texture2D::compareByIDSmaller(a->texture,b->texture)) return true;
-	return false;
+	else
+	{
+		if(Texture2D::compareByIDDifferent(a->texture, b->texture)) return false;
+		else {
+			if(a->depth > b->depth) return true;
+			return false;
+		}
+	}
 }
 
 void InfoQuad::Init(const Rect& destRect, const Rect& texRect, bool flip, Texture2D* tex,float Depth, const ColorRGBA8& color){

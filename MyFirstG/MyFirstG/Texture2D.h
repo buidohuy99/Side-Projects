@@ -27,10 +27,10 @@ public:
 	unsigned int getHeight() {return Height;};
 	//Comparisons
 	static bool compareByIDSmaller(Texture2D* a, Texture2D* b){
-		return a->ID<b->ID;
+		return a->ID < b->ID;
 	};
 	static bool compareByIDDifferent(Texture2D* a, Texture2D* b){
-		return a->ID!=b->ID;
+		return !(a->ID == b->ID);
 	};
     // Constructor (sets default texture modes)
 	Texture2D():Wrap_S(GL_CLAMP_TO_EDGE),Wrap_T(GL_CLAMP_TO_EDGE),Filter_Min(GL_NEAREST_MIPMAP_NEAREST),Filter_Mag(GL_NEAREST){

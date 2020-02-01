@@ -5,6 +5,7 @@
 #include "SceneManager.h"
 #include "ResourceManager.h"
 #include "InputControl.h"
+#include "mainGame.h"
 #include <iostream>
 #include <exception>
 
@@ -92,26 +93,31 @@ void Application::SDLEvtHandling(SDL_Event& e){ //tam thoi co van de
             inputControl->pressKey(e.button.button);
             break;
         case SDL_MOUSEBUTTONUP:
-           inputControl->releaseKey(e.button.button);
+			inputControl->releaseKey(e.button.button);
             break;
 		}
 		if(!isActive) break;
 	}
 }
 
+void Application::InitContents() {
+	if(!currentState) return;
+	currentState->InitContents(this);
+}
+
 void Application::HandleInput(){
-	if(inputControl->isKeyDown(SDLK_a)){
-		sceneManager->moveCamera(glm::vec2(-1.0f,0.0f));
-	}
-	if(inputControl->isKeyDown(SDLK_d)){
-		sceneManager->moveCamera(glm::vec2(1.0f,0.0f));
-	}
-	if(inputControl->isKeyDown(SDLK_w)){
-		sceneManager->moveCamera(glm::vec2(0.0f,1.0f));
-	}
-	if(inputControl->isKeyDown(SDLK_s)){
-		sceneManager->moveCamera(glm::vec2(0.0f,-1.0f));
-	}
+	if(!currentState) return;
+	currentState->HandleInput(this);
+}
+
+void Application::Update() {
+	if(!currentState) return;
+	currentState->Update(this);
+}
+
+void Application::Draw() {
+	if(!currentState) return;
+	currentState->Draw(this);
 }
 
 void Application::calculateFPS(){
@@ -140,6 +146,10 @@ void Application::calculateFPS(){
 	currentSample++;
 }
 
+void Application::loadAllGameStates() {
+	this->addState(new mainGame());
+}
+
 void Application::Run(){
 	
 	//Enable GL Blend
@@ -157,8 +167,13 @@ void Application::Run(){
 	currentShader->use();
 	currentShader->setMatrix4("p",sceneManager->getOrthoMatrix());
 
+	//Load game states
+	loadAllGameStates();
+		//State change to first game state
+	changeState(0);
+
 	//Do Init Content of SceneManager and ResourceManager here
-	
+	InitContents();
 	
 	//set clear color
 	glClearColor(0.3f,0.3f,0.7f,0.3f);
@@ -187,11 +202,12 @@ void Application::Run(){
 		while(accumulated>=physicsTime){
 			//----Add physics here---------
 			accumulated-=physicsTime;
+			Update();
 		}	
 		//----------Render Scene----------
 		//use program
 		currentShader->use();
-		sceneManager->drawScene();
+		Draw();
 		//Update window
 		window->Update();
 	}

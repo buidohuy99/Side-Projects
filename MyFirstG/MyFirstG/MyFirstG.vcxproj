@@ -39,8 +39,8 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <IncludePath>D:\VSProjects\LearningOutside\MyFirstG\Includes;$(IncludePath)</IncludePath>
-    <LibraryPath>D:\vs_dev_lib\SDL2-2.0.9\lib\x86;$(LibraryPath)</LibraryPath>
+    <IncludePath>D:\GitClones\Side-Projects\MyFirstG\Includes;$(IncludePath)</IncludePath>
+    <LibraryPath>D:\GitClones\Side-Projects\MyFirstG\Libraries\SDL2-2.0.9\lib\x86;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>

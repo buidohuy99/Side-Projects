@@ -5,8 +5,8 @@ struct Rect;
 
 template <class objType>
 struct TreeNode{
-	glm::vec2 center;
-	glm::vec2 distToEdge;
+	float center[2];
+	float distToEdge[2];
 	std::vector <objType> objList;
 	TreeNode* child[4];
 };
@@ -29,5 +29,6 @@ private:
 	TreeNode<objType>* BuildTree(glm::vec2 center ,glm::vec2 halfs, unsigned int height);
 	void DestroyTree(TreeNode<objType>*&);
 	void ClearTree(TreeNode<objType>*);
+	void InsertTree(TreeNode<objType>*, Rect checkRect, objType actualObj);
 };
 

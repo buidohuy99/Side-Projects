@@ -43,18 +43,32 @@ void mainGame::InitContents(Application* app){
 	loadSpritesAndTextures(resourceManager);
 	loadAniFrames(resourceManager);
 	SceneManager* sceneManager = app->getSceneManager();
-	
+	loadMaps(sceneManager);
 }
 
 void mainGame::HandleInput(Application* app){
 	InputControl* inputControl = app->getInputControl();
+	SceneManager* sceneManager = app->getSceneManager();
 	if(!inputControl) return;
+	if(inputControl->isKeyDown(SDLK_a)){
+		sceneManager->moveCamera(glm::vec2(-1.0f,0.0f));
+	}
+	if(inputControl->isKeyDown(SDLK_d)){
+		sceneManager->moveCamera(glm::vec2(1.0f,0.0f));
+	}
+	if(inputControl->isKeyDown(SDLK_w)){
+		sceneManager->moveCamera(glm::vec2(0.0f,1.0f));
+	}
+	if(inputControl->isKeyDown(SDLK_s)){
+		sceneManager->moveCamera(glm::vec2(0.0f,-1.0f));
+	}
 }
 
 void mainGame::Update(Application* app){
-
+	
 }
 
 void mainGame::Draw(Application* app){
-	
+	SceneManager* sceneManager = app->getSceneManager();
+	sceneManager->drawScene();
 }

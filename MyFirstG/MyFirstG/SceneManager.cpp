@@ -60,7 +60,7 @@ SceneManager::~SceneManager(void)
 bool SceneManager::loadMap(std::string mapName, std::string mapInfoFile, std::string mapLayoutFile, std::string mapSprite){
 	auto found=tileMaps.find(mapName);
 	if(found!=tileMaps.end()) return false;
-	TileMap* temp= new TileMap;
+	TileMap* temp= new TileMap();
 	if(temp==nullptr) return false;
 	if(!temp->setTileMapSprite(mapSprite)) return false;
 	if(!temp->readMapFromFile(mapLayoutFile,mapInfoFile)) return false;
@@ -80,7 +80,7 @@ bool SceneManager::setCurrentMap(std::string mapName){
 	auto found=tileMaps.find(mapName);
 	if(found==tileMaps.end()) return false;
 	currentMapName = mapName;
-	currentTileMap=found->second;
+	currentTileMap = found->second;
 	currentTileMap->setMapBounds(myCamera->getScreenSizes());
 	return true;
 }

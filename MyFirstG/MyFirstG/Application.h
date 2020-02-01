@@ -33,6 +33,9 @@ private:
 	SDL_Event inputChecker;
 	void SDLEvtHandling(SDL_Event& e);
 	
+	//Load game states
+	void loadAllGameStates();
+
 	//Will use when app scene system is implimented
 	void InitContents();
 	void HandleInput();

@@ -247,7 +247,8 @@ bool TileMap::loadMap(std::string mapFile){
 					{
 						if(check.compare("")==0) continue;
 						if(check.compare("<")!=0) {
-							if(check.compare("spriteMap")==0) {phase=0;
+							if(check.compare("spriteMap")==0) {
+								phase=0;
 								currentLayer = -1;
 								ss>>currentLayer;
 								if(currentLayer < 0 || currentLayer>=MAX_LAYERS) { throw std::string("SpriteMap Layer not indicated or Layer not available : ")+tempLine; };
@@ -258,7 +259,7 @@ bool TileMap::loadMap(std::string mapFile){
 						}
 						switch(phase){
 						case 0:
-							if(spriteMap[currentLayer].size()+mapWidth>mapHeight*mapWidth) {
+							if(spriteMap[currentLayer].size() + mapWidth > mapHeight * mapWidth) {
 								throw std::string("Violated predetermined height: ")+tempLine;
 							};
 							break;
@@ -291,7 +292,6 @@ bool TileMap::loadMap(std::string mapFile){
 									break;
 								}
 							}
-							
 						}
 					}	
 				}
