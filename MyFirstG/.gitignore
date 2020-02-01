@@ -1,2 +1,4 @@
-./Debug
-./MyFirstG/Debug
+Debug
+MyFirstG/Debug
+*.opensdf
+*.sdf
