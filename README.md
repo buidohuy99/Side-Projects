@@ -3,7 +3,7 @@ Projects when I was/am free
 # OpenGL 2D TileMap rendering  
 - Used OpenGL, C++ and SDL2  
 - Render tilemap and scroll around with camera  
-- Currently on hold, will comeback when free from projects from school
+- Probably will never come back, I'm burned out
 - How to run :
 > 1. Open .sln file in Visual Studio  
 > 2. Navigate Project > Properties > Configuration Properties
